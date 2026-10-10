@@ -3,3 +3,146 @@
      "h1") e de classes e ids de elementos/seções que sempre aparecerão,
      independentemente da página (ex: header, nav, footer)
 */
+
+body{
+    color: #a7d5ff;
+    background-color: #06182a;
+}
+a {
+    color: #a7d5ff;
+}
+hr {
+    color: #b0d7fc;
+}
+h2 {
+    font-size: 1.7em;
+}
+h3 {
+    font-size: 1.5em;
+}
+h4 {
+    font-size: 1.5em;
+}
+button {
+    border: 3px solid #06182a;
+    border-radius: 5px;
+    height: 40px;
+    color: #06182a;
+    background-color: #b0d7fc;
+}
+button:hover {
+    background-color: #89b5de;
+}
+input, textarea {
+    color: #a7d5ff;
+    border: 1px solid #b0d7fc;
+    border-radius: 5px;
+    background-color: #06182a;
+}
+
+/*--- Destaque ---*/
+
+h1 {
+    font-size: 2em;
+    margin-left: 20px;
+}
+header {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin: -8px -8px 0px -8px;
+}
+#header-logo {
+    display: inline-flex;
+    background-color: #1b3c5a;
+}
+#header-logo img {
+    height: 90px;
+}
+#header-user{
+    display: inline-flex;
+    justify-content: right;
+    background-color: #1b3c5a;
+} 
+#header-user img {
+    height: 50px;
+    margin: 20px;
+}
+#header-user a {
+    border: 2px solid transparent;
+    border-radius: 15px;
+    background-color: #06182a;
+    text-decoration: none;
+    font-size: 1.4em;
+    margin: 1em;
+    padding: 10px;
+}
+
+/*--- nav ---*/
+
+nav {
+    background-color: #1b3c5a;
+    margin: 0px -8px 0px -8px;
+    padding-bottom: 20px;
+}
+nav a {
+    border: 4px solid;
+    border-color: transparent transparent #688daf transparent;
+    padding: 5px;
+    text-decoration: none;
+    font-size: 1.5em;
+    margin: 0px 1em 0px 1em;
+}
+nav a:hover, #nav-active:hover {
+    color: #b0d7fc;
+    border-color: transparent transparent #b0d7fc transparent;
+}
+#nav-active {
+    border-color: transparent transparent #8abae7 transparent;
+}
+
+/*--- main ---*/
+
+main {
+    background-color: #06182a;
+}
+
+
+/*--- Rodapé ---*/
+
+footer {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin: 0px -8px -8px -8px;
+}
+.info-loja {
+    background-color: #1b3c5a;
+}
+.info-loja h2, .info-loja li {
+    margin: 50px;
+}
+li {
+    font-size: 1.5em;
+}
+.form-contato-loja {
+    background-color: #1b3c5a;
+}
+#form-contato {
+    border: 2px solid #b0d7fc;
+    background-color: #09233e;
+    margin: 40px;  
+}
+.form-elements {
+    margin: 30px;
+    justify-content: center;
+}
+.form-elements label {
+    display: block;
+    margin: 20px 0px 20px 0px;
+}
+.form-elements input, .form-elements textarea {
+    width: 100%; 
+}
+.form-elements button {
+    margin-top: 15px;
+    width: 101.5%;
+}

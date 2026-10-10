@@ -3,3 +3,70 @@
     que são únicas a certas páginas, com exclusão de relatorios.html (ex: descrição 
     da loja e galeria de produtos em index.html, formulários em cadastro.html/login.html)
 */
+
+/*
+    =================
+    index.html (Home)
+    =================
+*/
+
+/*--- Produtos Disponíveis ---*/
+
+#produtos-disponiveis {
+    margin: 30px;
+}
+.caixa-produto {
+    display: inline-flex;
+}
+.info-produto {
+    display: grid;
+    grid-template-rows: 60% 2% 24% 14%;
+    border: 3px solid #b0d7fc;
+    width: 310px;
+    height: 460px;
+    margin: 20px; 
+    text-align: center;
+}
+.info-produto img {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+    background-color: #09233e;
+}
+.info-produto hr {
+    height: 100%;
+    background-color: #1b3c5a;
+    margin: 0px;
+}
+.titulo-desc-produto, .preco-botao-produto {
+    background-color: #1b3c5a;
+}
+.titulo-desc-produto p{
+    margin-left: 10px;
+    overflow: scroll;
+}
+.titulo-desc-produto h3 {
+    margin: 15px;
+}
+.preco-botao-produto h4 {
+    display: inline-flex;
+    margin: 20px;
+}
+
+/*--- Descrição da Loja ---*/
+
+#descricao-loja {
+    display: grid;
+    grid-template-columns: 45% 55%;
+    margin: 40px;
+}
+.descricao-texto p {
+    font-size: 1.5em;
+}
+.descricao-galeria img {
+    border: 2px solid #b0d7fc;
+    background-color: #09233e;
+    height: 400px;
+    margin: 20px; 
+    width: 45%;
+}
