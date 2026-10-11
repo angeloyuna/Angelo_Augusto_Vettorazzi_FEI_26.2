@@ -70,3 +70,51 @@
     margin: 20px; 
     width: 45%;
 }
+
+/*
+    =============================================
+    cadastro.html e login.html (Cadastro e Login)
+    =============================================
+*/
+
+/*--- Cadastro/Login ---*/
+
+#usuario-cadastro-login {
+    display: flex;
+    margin: 30px;
+    justify-content: center;
+}
+#caixa-cadastro-login {
+    border: 2px solid #b0d7fc;
+    background-color: #09233e;
+    width: 50%;
+}
+#caixa-cadastro-login h2 {
+    font-size: 2.5em;
+    margin: 20px;
+    text-align: center;
+}
+.form-cadastro-login-elements input, .form-cadastro-login-elements button, .form-cadastro-login-elements label {
+    font-size: 1.75em;
+    margin: 25px;
+}
+.form-cadastro-login-elements label {
+    margin-right: 5px;
+}
+.form-cadastro-login-elements p {
+    display: inline;
+    font-size: 1em;
+    margin: 0px;
+    color: #73a4d2;
+}
+.form-cadastro-login-elements a {
+    margin: 20px;
+}
+.form-cadastro-login-elements input {
+    width: 95%;
+}
+.form-cadastro-login-elements button {
+    margin-top: 20;
+    height: 60px;
+    width: 96%;
+}

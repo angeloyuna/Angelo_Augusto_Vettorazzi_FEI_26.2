@@ -33,6 +33,9 @@ button {
 button:hover {
     background-color: #89b5de;
 }
+button:active {
+    background-color: #688daf;
+}
 input, textarea {
     color: #a7d5ff;
     border: 1px solid #b0d7fc;
@@ -75,6 +78,15 @@ header {
     font-size: 1.4em;
     margin: 1em;
     padding: 10px;
+}
+#header-user a:hover {
+    background-color: #09233e;
+}
+#header-user a:active {
+    border-color: #b0d7fc;
+}
+#header-cadastro-login-in{
+    border-color: #b0d7fc !important;
 }
 
 /*--- nav ---*/
@@ -137,6 +149,7 @@ li {
 }
 .form-elements label {
     display: block;
+    font-weight: bold;
     margin: 20px 0px 20px 0px;
 }
 .form-elements input, .form-elements textarea {

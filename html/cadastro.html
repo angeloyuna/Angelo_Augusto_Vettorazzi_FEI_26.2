@@ -4,8 +4,70 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro - Enna's Fishing Wares</title>
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/componentes.css">
 </head>
 <body>
-    
+    <header>
+        <section id="header-logo">
+            <img src="../img/header/logo.png" alt="Logo de Enna's Fishing Wares">
+            <h1>Enna's Fishing Wares</h1>
+        </section>
+        <section id="header-user">
+            <a href="cadastro.html" id="header-cadastro-login-in">Cadastro</a>
+            <a href="login.html">Login</a>
+            <img src="../img/header/menu.png" alt="Ícone de Menu">
+        </section>
+    </header>
+    <nav>
+        <a href="index.html" id="nav-active">Home</a>
+        <a href="loja.html">Loja</a>
+    </nav>
+    <main id="usuario-cadastro-login">
+        <section id="caixa-cadastro-login">
+            <h2>Cadastro</h2>
+            <form id="form-cadastro" class="form-cadastro-login-elements">
+                <label for="">Nome</label>
+                <input type="label" required nome="cadastroNomeUsuario">
+                <label for="">CPF</label>
+                <p>(Apenas números)</p>
+                <input type="label" required pattern="[0-9]{11}" placeholder="Ex: 12312312355" cadastroCPFUsuario">
+                <label for="">E-mail</label>
+                <input type="email" required placeholder="Ex: nome@exemplo.com" nome="cadastroEmailUsuario">
+                <label for="">Senha</label>
+                <p>(Mínimo de 8 caracteres)</p>
+                <input type="password" required minlength="8" nome="cadastroSenhaUsuario">
+                <label for="">Confirmação de Senha</label>
+                <input type="password" required minlength="8" nome="cadastroConfirmacaoSenhaUsuario">
+                <a href="login.html">Já possui uma conta? Faça o login aqui</a>
+                <button type="submit" name="submeterUsuarioCadastro">Criar conta</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <section class="info-loja">
+            <h2>Informações da Empresa</h2>
+            <ul>
+                <li>Endereço: Moonriver Street, 8 / Lakeside Neighbourhood / Lussi City / Dyn State</li>
+                <li>Telefone: +1.22474 44 8233-3149</li>
+                <li>E-mail: contact@ennafishingwares.com</li>
+                <li>Horário: UTC+0</li>
+            </ul>
+        </section>
+        <section class="form-contato-loja">
+            <h2>Formulário de Contato</h2>
+            <form id="form-contato">
+                <div class="form-elements">
+                    <label for="">Nome</label>
+                    <input type="label" name="formContatoNomeUsuario">
+                    <label for="">E-mail</label>
+                    <input type="label" name="formContatoEmailUsuario">
+                    <label for="">Mensagem</label>
+                    <textarea></textarea>
+                    <button>Mandar mensagem</button>
+                </div>
+            </form>
+        </section>
+    </footer>
 </body>
 </html>
