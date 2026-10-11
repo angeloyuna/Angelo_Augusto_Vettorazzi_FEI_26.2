@@ -4,8 +4,140 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Perfil - Enna's Fishing Wares</title>
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/componentes.css">
 </head>
 <body>
-    
+    <header>
+        <section id="header-logo">
+            <img src="../img/header/logo.png" alt="Logo de Enna's Fishing Wares">
+            <h1>Enna's Fishing Wares</h1>
+        </section>
+        <section id="header-user">
+            <a href="cadastro.html" hidden>Cadastro</a>
+            <a href="login.html" hidden>Login</a>
+            <a href="perfil.html" id="header-cadastro-login-perfil-in">Perfil</a>
+            <img src="../img/header/menu.png" alt="Ícone de Menu">
+        </section>
+    </header>
+    <nav>
+        <a href="index.html" id="nav-active">Home</a>
+        <a href="loja.html">Loja</a>
+    </nav>
+    <main id="usuario-perfil">
+        <h2>Perfil</h2>
+        <aside id="perfil-meus-pedidos">
+            <table>
+                <caption>Meus Pedidos</caption>
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>Número do Pedido</th>
+                        <th>Data do Pedido</th>
+                        <th>Produtos</th>
+                        <th>Total</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>CP001</th>
+                        <td>CP001</td>
+                        <td>14/07/3817</td>
+                        <td>1 x Vara de Pesca ML<br>1 x Molinete L<br> 3 x Kit Iscas de Superfície</td>
+                        <td>R$549,95</td>
+                        <td>Entregue</td>
+                    </tr>
+                    <tr>
+                        <th>-</th>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th>-</th>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th>-</th>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th>-</th>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th>-</th>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </aside>
+        <aside id="perfil-editar-dados">
+            <h2>Edição de Dados</h2>
+            <form id="form-editar-dados-perfil" class="form-editar-dados-perfil-elements">
+                <label>ID</label>
+                <input id="perfil-id" type="label" disabled placeholder="C001">
+                <label for="perfil-editar-nome">Nome</label>
+                <input id="perfil-editar-nome" type="label" required nome="editarNome">
+                <label for="perfil-editar-cpf">CPF</label>
+                <p>(Apenas números)</p>
+                <input id="perfil-editar-cpf" type="label" required pattern="[0-9]{11}" placeholder="Ex: 12312312355" name="editarCPF">
+                <label for="perfil-editar-email">E-mail</label>
+                <input id="perfil-editar-email" type="email" required placeholder="Ex: nome@exemplo.com" nome="editarEmail">
+                <label for="perfil-editar-senha">Senha</label>
+                <p>(Mínimo de 8 caracteres)</p>
+                <input id="perfil-editar-senha" type="password" required minlength="8" nome="editarSenha">
+                <label for="perfil-editar-confirmacao-senha">Confirmação de Senha</label>
+                <input id="perfil-editar-confirmacao-senha" type="password" required minlength="8" nome="editarConfirmacaoSenha">
+                <button id="botao-perfil-editar-dados" type="submit" name="submeterEdicao">Editar dados</button>
+            </form>
+        </aside>
+    </main>
+    <footer>
+        <section id="info-loja">
+            <div id="info-loja-elements">
+                <h2>Informações da Empresa</h2>
+                <ul>
+                    <li>Endereço: Moonriver Street, 8 / Lakeside Neighbourhood / Lussi City / Dyn State</li>
+                    <li>Telefone: +1.22474 44 8233-3149</li>
+                    <li>E-mail: contact@ennafishingwares.com</li>
+                    <li>Horário: UTC+0</li>
+                </ul>
+            </div>
+        </section>
+        <section id="form-contato-loja">
+            <form id="form-contato">
+                <div id="form-contato-elements">
+                    <h2>Formulário de Contato</h2>
+                    <label for="input-contato-nome">Nome</label>
+                    <input id="input-contato-nome" required type="label" name="formContatoNome">
+                    <label for="input-contato-email">E-mail</label>
+                    <input id="input-contato-email" required type="email" name="formContatoEmail">
+                    <label for="input-contato-mensagem">Mensagem</label>
+                    <textarea required id="input-contato-mensagem"></textarea>
+                    <button id="form-contato-mandar-mensagem">Mandar mensagem</button>
+                </div>
+            </form>
+        </section>
+    </footer>
 </body>
 </html>

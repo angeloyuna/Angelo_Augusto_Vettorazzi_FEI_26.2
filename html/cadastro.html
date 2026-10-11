@@ -14,8 +14,9 @@
             <h1>Enna's Fishing Wares</h1>
         </section>
         <section id="header-user">
-            <a href="cadastro.html" id="header-cadastro-login-in">Cadastro</a>
+            <a href="cadastro.html" id="header-cadastro-login-perfil-in">Cadastro</a>
             <a href="login.html">Login</a>
+            <a href="perfil.html" hidden>Perfil</a>
             <img src="../img/header/menu.png" alt="Ícone de Menu">
         </section>
     </header>
@@ -27,44 +28,46 @@
         <section id="caixa-cadastro-login">
             <h2>Cadastro</h2>
             <form id="form-cadastro" class="form-cadastro-login-elements">
-                <label for="">Nome</label>
-                <input type="label" required nome="cadastroNomeUsuario">
-                <label for="">CPF</label>
+                <label for="input-cadastro-nome">Nome</label>
+                <input id="input-cadastro-nome" type="label" required nome="cadastroNome">
+                <label for="input-cadastro-cpf">CPF</label>
                 <p>(Apenas números)</p>
-                <input type="label" required pattern="[0-9]{11}" placeholder="Ex: 12312312355" cadastroCPFUsuario">
-                <label for="">E-mail</label>
-                <input type="email" required placeholder="Ex: nome@exemplo.com" nome="cadastroEmailUsuario">
-                <label for="">Senha</label>
+                <input id="input-cadastro-cpf" type="label" required pattern="[0-9]{11}" placeholder="Ex: 12312312355" name="cadastroCPF">
+                <label for="input-cadastro-email">E-mail</label>
+                <input id="input-cadastro-email" type="email" required placeholder="Ex: nome@exemplo.com" nome="cadastroEmail">
+                <label for="input-cadastro-senha">Senha</label>
                 <p>(Mínimo de 8 caracteres)</p>
-                <input type="password" required minlength="8" nome="cadastroSenhaUsuario">
-                <label for="">Confirmação de Senha</label>
-                <input type="password" required minlength="8" nome="cadastroConfirmacaoSenhaUsuario">
+                <input id="input-cadastro-senha" type="password" required minlength="8" nome="cadastroSenha">
+                <label for="input-cadastro-confirmacao-senha">Confirmação de Senha</label>
+                <input id="input-cadastro-confirmacao-senha" type="password" required minlength="8" nome="cadastroConfirmacaoSenha">
                 <a href="login.html">Já possui uma conta? Faça o login aqui</a>
-                <button type="submit" name="submeterUsuarioCadastro">Criar conta</button>
+                <button id="botao-cadastro-submeter" type="submit" name="submeterCadastro">Criar conta</button>
             </form>
         </section>
     </main>
     <footer>
-        <section class="info-loja">
-            <h2>Informações da Empresa</h2>
-            <ul>
-                <li>Endereço: Moonriver Street, 8 / Lakeside Neighbourhood / Lussi City / Dyn State</li>
-                <li>Telefone: +1.22474 44 8233-3149</li>
-                <li>E-mail: contact@ennafishingwares.com</li>
-                <li>Horário: UTC+0</li>
-            </ul>
+        <section id="info-loja">
+            <div id="info-loja-elements">
+                <h2>Informações da Empresa</h2>
+                <ul>
+                    <li>Endereço: Moonriver Street, 8 / Lakeside Neighbourhood / Lussi City / Dyn State</li>
+                    <li>Telefone: +1.22474 44 8233-3149</li>
+                    <li>E-mail: contact@ennafishingwares.com</li>
+                    <li>Horário: UTC+0</li>
+                </ul>
+            </div>
         </section>
-        <section class="form-contato-loja">
-            <h2>Formulário de Contato</h2>
+        <section id="form-contato-loja">
             <form id="form-contato">
-                <div class="form-elements">
-                    <label for="">Nome</label>
-                    <input type="label" name="formContatoNomeUsuario">
-                    <label for="">E-mail</label>
-                    <input type="label" name="formContatoEmailUsuario">
-                    <label for="">Mensagem</label>
-                    <textarea></textarea>
-                    <button>Mandar mensagem</button>
+                <div id="form-contato-elements">
+                    <h2>Formulário de Contato</h2>
+                    <label for="input-contato-nome">Nome</label>
+                    <input id="input-contato-nome" required type="label" name="formContatoNome">
+                    <label for="input-contato-email">E-mail</label>
+                    <input id="input-contato-email" required type="email" name="formContatoEmail">
+                    <label for="input-contato-mensagem">Mensagem</label>
+                    <textarea required id="input-contato-mensagem"></textarea>
+                    <button id="form-contato-mandar-mensagem">Mandar mensagem</button>
                 </div>
             </form>
         </section>

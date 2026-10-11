@@ -17,10 +17,7 @@ hr {
 h2 {
     font-size: 1.7em;
 }
-h3 {
-    font-size: 1.5em;
-}
-h4 {
+h3, h4, li {
     font-size: 1.5em;
 }
 button {
@@ -41,6 +38,26 @@ input, textarea {
     border: 1px solid #b0d7fc;
     border-radius: 5px;
     background-color: #06182a;
+}
+table {
+    border-collapse: collapse;
+}
+caption {
+    font-size: 2.5em;
+    font-weight: bold;
+    margin: 10px;
+}
+th, td {
+    border: 0.5px solid #b0d7fc;
+    padding: 20px;
+    font-size: 1.3em;
+}
+th {
+    background-color: #1b3c5a;
+}
+td {
+    background-color: #06182a;
+    text-align: center;
 }
 
 /*--- Destaque ---*/
@@ -85,7 +102,7 @@ header {
 #header-user a:active {
     border-color: #b0d7fc;
 }
-#header-cadastro-login-in{
+#header-cadastro-login-perfil-in {
     border-color: #b0d7fc !important;
 }
 
@@ -104,11 +121,11 @@ nav a {
     font-size: 1.5em;
     margin: 0px 1em 0px 1em;
 }
-nav a:hover, #nav-active:hover {
+nav a:hover, #nav-in:hover {
     color: #b0d7fc;
     border-color: transparent transparent #b0d7fc transparent;
 }
-#nav-active {
+#nav-in {
     border-color: transparent transparent #8abae7 transparent;
 }
 
@@ -126,16 +143,19 @@ footer {
     grid-template-columns: 50% 50%;
     margin: 0px -8px -8px -8px;
 }
-.info-loja {
+#info-loja {
     background-color: #1b3c5a;
 }
-.info-loja h2, .info-loja li {
+#info-loja h2, #info-loja li {
     margin: 50px;
 }
-li {
-    font-size: 1.5em;
+#info-loja-elements {
+    border: 2px solid transparent;
+    border-radius: 30px;
+    margin: 25px;
+    background-color: #09233e;
 }
-.form-contato-loja {
+#form-contato-loja {
     background-color: #1b3c5a;
 }
 #form-contato {
@@ -143,19 +163,22 @@ li {
     background-color: #09233e;
     margin: 40px;  
 }
-.form-elements {
+#form-contato-elements {
     margin: 30px;
     justify-content: center;
 }
-.form-elements label {
+#form-contato-elements h2 {
+    text-align: center;
+}
+#form-contato-elements label {
     display: block;
     font-weight: bold;
     margin: 20px 0px 20px 0px;
 }
-.form-elements input, .form-elements textarea {
+#form-contato-elements input, #form-contato-elements textarea {
     width: 100%; 
 }
-.form-elements button {
+#form-contato-elements button {
     margin-top: 15px;
     width: 101.5%;
 }

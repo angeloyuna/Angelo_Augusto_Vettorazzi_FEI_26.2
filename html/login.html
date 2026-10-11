@@ -15,7 +15,8 @@
         </section>
         <section id="header-user">
             <a href="cadastro.html">Cadastro</a>
-            <a href="login.html" id="header-cadastro-login-in">Login</a>
+            <a href="login.html" id="header-cadastro-login-perfil-in">Login</a>
+            <a href="perfil.html" hidden>Perfil</a>
             <img src="../img/header/menu.png" alt="Ícone de Menu">
         </section>
     </header>
@@ -27,36 +28,38 @@
         <section id="caixa-cadastro-login">
             <h2>Login</h2>
             <form id="form-login" class="form-cadastro-login-elements">
-                <label for="">E-mail</label>
-                <input type="email" required placeholder="Ex: nome@exemplo.com" nome="loginEmailUsuario">
-                <label for="">Senha</label>
-                <input type="password" required nome="loginSenhaUsuario">
+                <label for="input-login-email">E-mail</label>
+                <input id="input-login-email" type="email" required placeholder="Ex: nome@exemplo.com" nome="loginEmail">
+                <label for="input-login-senha">Senha</label>
+                <input id="input-login-senha" type="password" required nome="loginSenha">
                 <a href="cadastro.html">Não possui uma conta? Cadastre-se aqui</a>
-                <button type="submit" name="submeterUsuarioLogin">Entrar</button>
+                <button id="botao-login-submeter" type="submit" name="submeterLogin">Entrar</button>
             </form>
         </section>
     </main>
     <footer>
-        <section class="info-loja">
-            <h2>Informações da Empresa</h2>
-            <ul>
-                <li>Endereço: Moonriver Street, 8 / Lakeside Neighbourhood / Lussi City / Dyn State</li>
-                <li>Telefone: +1.22474 44 8233-3149</li>
-                <li>E-mail: contact@ennafishingwares.com</li>
-                <li>Horário: UTC+0</li>
-            </ul>
+        <section id="info-loja">
+            <div id="info-loja-elements">
+                <h2>Informações da Empresa</h2>
+                <ul>
+                    <li>Endereço: Moonriver Street, 8 / Lakeside Neighbourhood / Lussi City / Dyn State</li>
+                    <li>Telefone: +1.22474 44 8233-3149</li>
+                    <li>E-mail: contact@ennafishingwares.com</li>
+                    <li>Horário: UTC+0</li>
+                </ul>
+            </div>
         </section>
-        <section class="form-contato-loja">
-            <h2>Formulário de Contato</h2>
+        <section id="form-contato-loja">
             <form id="form-contato">
-                <div class="form-elements">
-                    <label for="">Nome</label>
-                    <input type="label" name="formContatoNomeUsuario">
-                    <label for="">E-mail</label>
-                    <input type="label" name="formContatoEmailUsuario">
-                    <label for="">Mensagem</label>
-                    <textarea></textarea>
-                    <button>Mandar mensagem</button>
+                <div id="form-contato-elements">
+                    <h2>Formulário de Contato</h2>
+                    <label for="input-contato-nome">Nome</label>
+                    <input id="input-contato-nome" required type="label" name="formContatoNome">
+                    <label for="input-contato-email">E-mail</label>
+                    <input id="input-contato-email" required type="email" name="formContatoEmail">
+                    <label for="input-contato-mensagem">Mensagem</label>
+                    <textarea required id="input-contato-mensagem"></textarea>
+                    <button id="form-contato-mandar-mensagem">Mandar mensagem</button>
                 </div>
             </form>
         </section>

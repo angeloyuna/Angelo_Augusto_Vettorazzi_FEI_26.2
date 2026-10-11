@@ -16,11 +16,12 @@
         <section id="header-user">
             <a href="cadastro.html">Cadastro</a>
             <a href="login.html">Login</a>
+            <a href="perfil.html" hidden>Perfil</a>
             <img src="../img/header/menu.png" alt="Ícone de Menu">
         </section>
     </header>
     <nav>
-        <a href="index.html" id="nav-active">Home</a>
+        <a href="index.html" id="nav-in">Home</a>
         <a href="loja.html">Loja</a>
     </nav>
     <main>
@@ -32,11 +33,11 @@
                     <hr>
                     <div class="titulo-desc-produto">
                         <h3>Vara de Pesca ML</h3>
-                        <p>Vara de Pesca Medium Light (6 a 17 lb), adequada para a pesca de peixes de 2kg a 10kg. Equilíbrio entre sensibilidade e força.</p>
+                        <p>Vara de Pesca Medium Light (6 a 17 lb), adequada para a pesca de peixes de 2kg a 7kg. Equilíbrio entre sensibilidade e força.</p>
                     </div>
                     <div class="preco-botao-produto">
                         <h4>R$239,99</h4>
-                        <button>Adicionar ao Carrinho</button>
+                        <button id="produtos-adicionar-vara-ml">Adicionar ao Carrinho</button>
                     </div>
                 </div>
             </div>
@@ -50,7 +51,7 @@
                     </div>
                     <div class="preco-botao-produto">
                         <h4>R$139,99</h4>
-                        <button>Adicionar ao Carrinho</button>
+                        <button id="produtos-adicionar-vara-l">Adicionar ao Carrinho</button>
                     </div>
                 </div>
             </div>
@@ -64,7 +65,7 @@
                     </div>
                     <div class="preco-botao-produto">
                         <h4>R$89,99</h4>
-                        <button>Adicionar ao Carrinho</button>
+                        <button id="produtos-adicionar-vara-ul">Adicionar ao Carrinho</button>
                     </div>
                 </div>
             </div>
@@ -78,7 +79,7 @@
                     </div>
                     <div class="preco-botao-produto">
                         <h4>R$79,99</h4>
-                        <button>Adicionar ao Carrinho</button>
+                        <button id="produtos-adicionar-molinete-ul">Adicionar ao Carrinho</button>
                     </div>
                 </div>
             </div>  
@@ -92,7 +93,7 @@
                     </div>
                     <div class="preco-botao-produto">
                         <h4>R$129,99</h4>
-                        <button>Adicionar ao Carrinho</button>
+                        <button id="produtos-adicionar-molinete-l">Adicionar ao Carrinho</button>
                     </div>
                 </div>
             </div>
@@ -106,7 +107,7 @@
                     </div>
                     <div class="preco-botao-produto">
                         <h4>R$299,99</h4>
-                        <button>Adicionar ao Carrinho</button>
+                        <button id="produtos-adicionar-carretilha-baixo">Adicionar ao Carrinho</button>
                     </div>
                 </div>
             </div>
@@ -120,7 +121,7 @@
                     </div>
                     <div class="preco-botao-produto">
                         <h4>R$429,99</h4>
-                        <button>Adicionar ao Carrinho</button>
+                        <button id="produtos-adicionar-carretilha-alto">Adicionar ao Carrinho</button>
                     </div>
                 </div>
             </div>
@@ -134,7 +135,7 @@
                     </div>
                     <div class="preco-botao-produto">
                         <h4>R$59,99</h4>
-                        <button>Adicionar ao Carrinho</button>
+                        <button id="produtos-adicionar-kit-isca-superficie">Adicionar ao Carrinho</button>
                     </div>
                 </div>
             </div>
@@ -148,7 +149,7 @@
                     </div>
                     <div class="preco-botao-produto">
                         <h4>R$99,99</h4>
-                        <button>Adicionar ao Carrinho</button>
+                        <button id="produtos-adicionar-kit-isca-meia-agua">Adicionar ao Carrinho</button>
                     </div>
                 </div>
             </div>
@@ -162,7 +163,7 @@
                     </div>
                     <div class="preco-botao-produto">
                         <h4>R$99,99</h4>
-                        <button>Adicionar ao Carrinho</button>
+                        <button id="produtos-adicionar-kit-isca-fundo">Adicionar ao Carrinho</button>
                     </div>
                 </div>
             </div>
@@ -182,26 +183,28 @@
         </section>
     </main>
     <footer>
-        <section class="info-loja">
-            <h2>Informações da Empresa</h2>
-            <ul>
-                <li>Endereço: Moonriver Street, 8 / Lakeside Neighbourhood / Lussi City / Dyn State</li>
-                <li>Telefone: +1.22474 44 8233-3149</li>
-                <li>E-mail: contact@ennafishingwares.com</li>
-                <li>Horário: UTC+0</li>
-            </ul>
+        <section id="info-loja">
+            <div id="info-loja-elements">
+                <h2>Informações da Empresa</h2>
+                <ul>
+                    <li>Endereço: Moonriver Street, 8 / Lakeside Neighbourhood / Lussi City / Dyn State</li>
+                    <li>Telefone: +1.22474 44 8233-3149</li>
+                    <li>E-mail: contact@ennafishingwares.com</li>
+                    <li>Horário: UTC+0</li>
+                </ul>
+            </div>
         </section>
-        <section class="form-contato-loja">
-            <h2>Formulário de Contato</h2>
+        <section id="form-contato-loja">
             <form id="form-contato">
-                <div class="form-elements">
-                    <label for="">Nome</label>
-                    <input type="label" name="formContatoNomeUsuario">
-                    <label for="">E-mail</label>
-                    <input type="label" name="formContatoEmailUsuario">
-                    <label for="">Mensagem</label>
-                    <textarea></textarea>
-                    <button>Mandar mensagem</button>
+                <div id="form-contato-elements">
+                    <h2>Formulário de Contato</h2>
+                    <label for="input-contato-nome">Nome</label>
+                    <input id="input-contato-nome" required type="label" name="formContatoNome">
+                    <label for="input-contato-email">E-mail</label>
+                    <input id="input-contato-email" required type="email" name="formContatoEmail">
+                    <label for="input-contato-mensagem">Mensagem</label>
+                    <textarea required id="input-contato-mensagem"></textarea>
+                    <button id="form-contato-mandar-mensagem">Mandar mensagem</button>
                 </div>
             </form>
         </section>
