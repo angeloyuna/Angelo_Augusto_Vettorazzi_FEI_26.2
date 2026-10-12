@@ -4,8 +4,433 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Loja - Enna's Fishing Wares</title>
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/componentes.css">
 </head>
 <body>
-    
+    <header>
+        <section id="header-logo">
+            <img src="../img/header/logo.png" alt="Logo de Enna's Fishing Wares">
+            <h1>Enna's Fishing Wares</h1>
+        </section>
+        <section id="header-user">
+            <a href="cadastro.html">Cadastro</a>
+            <a href="login.html">Login</a>
+            <a href="perfil.html" hidden>Perfil</a>
+            <img src="../img/header/menu.png" alt="Ícone de Menu">
+        </section>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="loja.html" id="nav-in">Loja</a>
+    </nav>
+    <main>
+        <section id="loja-catalogo">
+            <h2>Catálogo</h2>
+            <form id="form-catalogo">
+                <label for="barra-pesquisa-catalogo">Pesquisa de Produtos</label>
+                <input type="search" id="barra-pesquisa-catalogo" placeholder="Pesquisar produto..." name="pesquisaProduto">
+                <h3>Filtros</h3>
+                <div class="catalogo-tipo-filtro">
+                    <h4>Categoria</h4>
+                    <div>
+                        <input id="checkbox-categoria-varas" type="checkbox" name="categoriaVaras">
+                        <label for="checkbox-categoria-varas">Varas de Pesca</label>
+                    </div>
+                    <div>
+                        <input id="checkbox-categoria-molinetes" type="checkbox" name="categoriaMolinetes">
+                        <label for="checkbox-categoria-molinetes">Molinetes</label>
+                    </div>
+                    <div>
+                        <input id="checkbox-categoria-carretilhas" type="checkbox" name="categoriaCarretilhas">
+                        <label for="checkbox-categoria-carretilhas">Carretilhas</label>
+                    </div>
+                    <div>
+                        <input id="checkbox-categoria-kit-iscas" type="checkbox" name="categoriaKitIscas">
+                        <label for="checkbox-categoria-kit-iscas">Kit Iscas</label>
+                    </div>
+                    <div>
+                        <input id="checkbox-categoria-linhas-pesca" type="checkbox" name="categoriaRoupas">
+                        <label for="checkbox-categoria-linhas-pesca">Linhas de Pesca</label>
+                    </div>
+                    <div>
+                        <input id="checkbox-categoria-anzois" type="checkbox" name="categoriaRoupas">
+                        <label for="checkbox-categoria-anzois">Kit Anzóis</label>
+                    </div>
+                </div>
+                <div class="catalogo-tipo-filtro">
+                    <h4>Faixa de Preço</h4>
+                    <div>
+                        <input id="faixa-preco-um-cinquenta" type="checkbox" name="faixaPrecoUmCinquenta">
+                        <label for="faixa-preco-um-cinquenta">R$0,00 - R$50,00</label>
+                    </div>
+                    <div>
+                        <input id="faixa-preco-cinquenta-cem" type="checkbox" name="faixaPrecoCinquentaCem">
+                        <label for="faixa-preco-cinquenta-cem">R$50,00 - R$100,00</label>
+                    </div>
+                    <div>
+                        <input id="faixa-preco-cem-cento-cinquenta" type="checkbox" name="faixaPrecoCemCentoCinquenta">
+                        <label for="faixa-preco-cem-cento-cinquenta">R$100,00 - R$150,00</label>
+                    </div>
+                    <div>
+                        <input id="faixa-preco-cento-cinquenta-duzentos" type="checkbox" name="faixaPrecoCentoCinquentaDuzentos">
+                        <label for="faixa-preco-cento-cinquenta-duzentos">R$150,00 - R$200,00</label>
+                    </div>
+                    <div>
+                        <input id="faixa-preco-duzentos-trezentos" type="checkbox" name="faixaPrecoDuzentosTrezentos">
+                        <label for="faixa-preco-duzentos-trezentos">R$200,00 - R$300,00</label>
+                    </div>
+                    <div>
+                        <input id="faixa-preco-mais-trezentos" type="checkbox" name="faixaPrecoMaisTrezentos">
+                        <label for="faixa-preco-mais-trezentos">+ R$300,00</label>
+                    </div>
+                </div>
+                <div class="catalogo-tipo-filtro">
+                    <h4>Ordenação</h4>
+                    <div>
+                        <input id="ordenacao-mais-vendidos" type="checkbox" name="ordenacaoMaisVendidos">
+                        <label for="ordenacao-mais-vendidos">Mais Vendidos</label>
+                    </div>
+                    <div>
+                        <input id="ordenacao-menores-precos" type="checkbox" name="ordenacaoMenoresPrecos">
+                        <label for="ordenacao-menores-precos">Menores Preços</label>
+                    </div>
+                    <div>
+                        <input id="ordenacao-melhor-avaliados" type="checkbox" name="ordenacaoMelhorAvaliados">
+                        <label for="ordenacao-melhor-avaliados">Melhor Avaliados</label>
+                    </div>
+                    <div>
+                        <input id="ordenacao-lancamentos" type="checkbox" name="ordenacaoLancamentos">
+                        <label for="ordenacao-lancamentos">Lançamentos</label>
+                    </div>
+                </div>
+            </form>
+            <div id="produtos-catalogo">
+                <span id="catalogo-varas">
+                    <div class="caixa-produto-catalogo">
+                        <div class="info-produto-catalogo">
+                            <img src="" alt="">
+                            <hr>
+                            <div class="titulo-desc-produto">
+                                <h3>Vara de Pesca M</h3>
+                                <p>Vara de Pesca Medium (12 a 20 lb), adequada para a pesca de peixes de tamanho médio, 4kg a 7kg . Oferece grande versatilidade.</p>
+                            </div>
+                            <div class="preco-botao-produto">
+                                <h4>R$329,99</h4>
+                                <button id="catalogo-adicionar-vara-ml">Adicionar ao Carrinho</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="caixa-produto-catalogo">
+                        <div class="info-produto-catalogo">
+                            <img src="" alt="">
+                            <hr>
+                            <div class="titulo-desc-produto">
+                                <h3>Vara de Pesca ML</h3>
+                                <p>Vara de Pesca Medium Light (6 a 17 lb), adequada para a pesca de peixes de 2kg a 7kg. Equilíbrio entre sensibilidade e força.</p>
+                            </div>
+                            <div class="preco-botao-produto">
+                                <h4>R$239,99</h4>
+                                <button id="catalogo-adicionar-vara-ml">Adicionar ao Carrinho</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="caixa-produto-catalogo">
+                        <div class="info-produto-catalogo">
+                            <img src="" alt="">
+                            <hr>
+                            <div class="titulo-desc-produto">
+                                <h3>Vara de Pesca L</h3>
+                                <p>Vara de Pesca Light (4 a 10 lb), adequada para a pesca de peixes leves a médios. Permite arremessos suaves de iscas pequenas.</p>
+                            </div>
+                            <div class="preco-botao-produto">
+                                <h4>R$139,99</h4>
+                                <button id="catalogo-adicionar-vara-l">Adicionar ao Carrinho</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="caixa-produto-catalogo">
+                        <div class="info-produto-catalogo">
+                            <img src="" alt="">
+                            <hr>
+                            <div class="titulo-desc-produto">
+                                <h3>Vara de Pesca UL</h3>
+                                <p>Vara de Pesca Ultra Light (1 a 6 lb), adequada para a pesca de espécies muito pequenas (até 2kg). Sensibilidade com iscas ultraleves.</p>
+                            </div>
+                            <div class="preco-botao-produto">
+                                <h4>R$89,99</h4>
+                                <button id="catalogo-adicionar-vara-ul">Adicionar ao Carrinho</button>
+                            </div>
+                        </div>
+                    </div>
+                </span>
+                <span id="catalogo-molinetas">
+                    <div class="caixa-produto-catalogo">
+                        <div class="info-produto-catalogo">
+                            <img src="" alt="">
+                            <hr>
+                            <div class="titulo-desc-produto">
+                                <h3>Molinete UL</h3>
+                                <p>Molinete adequado para a pesca de espécies muito pequenas, compatível com varas de libragem de 2 a 6 lb.</p>
+                            </div>
+                            <div class="preco-botao-produto">
+                                <h4>R$79,99</h4>
+                                <button id="catalogo-adicionar-molinete-ul">Adicionar ao Carrinho</button>
+                            </div>
+                        </div>
+                    </div>  
+                    <div class="caixa-produto-catalogo">
+                        <div class="info-produto-catalogo">
+                            <img src="" alt="">
+                            <hr>
+                            <div class="titulo-desc-produto">
+                                <h3>Molinete L</h3>
+                                <p>Molinete adequado para a pesca de espécies pequenas, compatível com varas de libragem de 6 a 14 lb.</p>
+                            </div>
+                            <div class="preco-botao-produto">
+                                <h4>R$129,99</h4>
+                                <button id="catalogo-adicionar-molinete-l">Adicionar ao Carrinho</button>
+                            </div>
+                        </div>
+                    </div>
+                </span>
+                <span id="catalogo-carretilhas">
+                    <div class="caixa-produto-catalogo">
+                        <div class="info-produto-catalogo">
+                            <img src="" alt="">
+                            <hr>
+                            <div class="titulo-desc-produto">
+                                <h3>Carretilha Perfil Baixo</h3>
+                                <p>Carretilha adequada para a pesca de espécies de tamanhos pequenos a médios.</p>
+                            </div>
+                            <div class="preco-botao-produto">
+                                <h4>R$299,99</h4>
+                                <button id="catalogo-adicionar-carretilha-baixo">Adicionar ao Carrinho</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="caixa-produto-catalogo">
+                        <div class="info-produto-catalogo">
+                            <img src="" alt="">
+                            <hr>
+                            <div class="titulo-desc-produto">
+                                <h3>Carretilha Perfil Alto</h3>
+                                <p>Carretilha adequada para a pesca de espéciesde tamanhos maiores.</p>
+                            </div>
+                            <div class="preco-botao-produto">
+                                <h4>R$429,99</h4>
+                                <button id="catalogo-adicionar-carretilha-alto">Adicionar ao Carrinho</button>
+                            </div>
+                        </div>
+                    </div>
+                </span>
+                <span id="catalogo-kit-iscas">
+                    <div class="caixa-produto-catalogo">
+                        <div class="info-produto-catalogo">
+                            <img src="" alt="">
+                            <hr>
+                            <div class="titulo-desc-produto">
+                                <h3>Kit Iscas de Superfície</h3>
+                                <p>20 Iscas Artificiais de Superfície, adequadas para a pesca de espécies presentes na flor d' água.</p>
+                            </div>
+                            <div class="preco-botao-produto">
+                                <h4>R$59,99</h4>
+                                <button id="catalogo-adicionar-kit-isca-superficie">Adicionar ao Carrinho</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="caixa-produto-catalogo">
+                        <div class="info-produto-catalogo">
+                            <img src="" alt="">
+                            <hr>
+                            <div class="titulo-desc-produto">
+                                <h3>Kit Iscas de Meia-Água</h3>
+                                <p>20 Iscas Artificiais de Meia-Água, adequadas para a pesca de espécies presentes em pequenas profundidades.</p>
+                            </div>
+                            <div class="preco-botao-produto">
+                                <h4>R$99,99</h4>
+                                <button id="catalogo-adicionar-kit-isca-meia-agua">Adicionar ao Carrinho</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="caixa-produto-catalogo">
+                        <div class="info-produto-catalogo">
+                            <img src="" alt="">
+                            <hr>
+                            <div class="titulo-desc-produto">
+                                <h3>Kit Iscas de Fundo </h3>
+                                <p>20 Iscas Artificiais de Fundo, adequadas para a pesca de espécies presentes em grandes profundidades.</p>
+                            </div>
+                            <div class="preco-botao-produto">
+                                <h4>R$99,99</h4>
+                                <button id="catalogo-adicionar-kit-isca-fundo">Adicionar ao Carrinho</button>
+                            </div>
+                        </div>
+                    </div>
+                </span>
+                <span id="catalogo-kit-anzois">
+                    <div class="caixa-produto-catalogo">
+                        <div class="info-produto-catalogo">
+                            <img src="" alt="">
+                            <hr>
+                            <div class="titulo-desc-produto">
+                                <h3>Kit Anzol Maruseigo</h3>
+                                <p>20 Anzóis Maruseigos, adequados para pesca de grande variedade de peixes.</p>
+                            </div>
+                            <div class="preco-botao-produto">
+                                <h4>R$15,99</h4>
+                                <button id="catalogo-adicionar-kit-anzol-maruseigo">Adicionar ao Carrinho</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="caixa-produto-catalogo">
+                        <div class="info-produto-catalogo">
+                            <img src="" alt="">
+                            <hr>
+                            <div class="titulo-desc-produto">
+                                <h3>Kit Anzol Circle Hook</h3>
+                                <p>20 Anzóis Circle Hook, adequados para a pesca de espécies através da pescaria "pesque e solte".</p>
+                            </div>
+                            <div class="preco-botao-produto">
+                                <h4>R$19,99</h4>
+                                <button id="catalogo-adicionar-kit-anzol-circle-hook">Adicionar ao Carrinho</button>
+                            </div>
+                        </div>
+                    </div>
+                </span>
+                <span id="catalogo-kit-linhas-pesca">
+                    <div class="caixa-produto-catalogo">
+                        <div class="info-produto-catalogo">
+                            <img src="" alt="">
+                            <hr>
+                            <div class="titulo-desc-produto">
+                                <h3>Linha de Monofilamento</h3>
+                                <p>150 metros de Linha de Monofilamento, possui grande versatilidade e elasticidade.</p>
+                            </div>
+                            <div class="preco-botao-produto">
+                                <h4>R$25,99</h4>
+                                <button id="catalogo-adicionar-cento-cinquenta-linha-monofilamento">Adicionar ao Carrinho</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="caixa-produto-catalogo">
+                        <div class="info-produto-catalogo">
+                            <img src="" alt="">
+                            <hr>
+                            <div class="titulo-desc-produto">
+                                <h3>Linha de Multifilamento</h3>
+                                <p>150 metros de Linha de Multifilamento, alta sensibilidade com nenhuma elasticidade, várias fibras.</p>
+                            </div>
+                            <div class="preco-botao-produto">
+                                <h4>R$49,99</h4>
+                                <button id="catalogo-adicionar-cento-cinquenta-linha-multifilamento">Adicionar ao Carrinho</button>
+                            </div>
+                        </div>
+                    </div>
+                </span>
+            </div>
+        </section>
+        <hr>
+        <section id="loja-carrinho">
+            <h2>Carrinho</h2>
+            <form id="form-carrinho">
+                <h3>Total</h3>
+                <div id="carrinho-secao">
+                    <p>R$ 549,95</p>
+                </div>
+                <h3>Dados Pessoais</h3>
+                <div id="carrinho-secao">
+                    <label for="carrinho-nome">Nome Completo</label>
+                    <input id="carrinho-nome" type="label" name="carrinhoNomeCompleto">
+                    <label for="carrinho-email">E-mail</label>
+                    <input id="carrinho-email" type="email" name="carrinhoEmail">
+                    <label for="carrinho-cpf">CPF</label>
+                    <input id="carrinho-cpf" type="label" name="carrinhoCPF">
+                    <label for="carrinho-endereco">Endereço</label>
+                    <input id="carrinho-endereco" type="label" name="carrinhoEndereco">
+                </div>
+                <h3>Pagamento</h3>
+                <div id="carrinho-secao">
+                    <button id="carrinho-gerar-pix">Gerar Chave PIX</button>
+                </div>
+                <button id="carrinho-finalizar-compra">Finalizar Compra</button>
+                <div hidden id="carrinho-compra-finalizada">
+                    <p>Compra Finalizada!</p>
+                    <p>Número de Pedido: CP001</p>
+                </div>
+            </form>
+            <div id="carrinho-itens">
+                <div class="carrinho-item">
+                    <div class="carrinho-item-esquerda">
+                        <p>1</p>
+                        <div class="carrinho-item-botoes">
+                            <button id="carrinho-incrementar-vara-ml">+</button>
+                            <button id="carrinho-decrementar-vara-ml">-</button>
+                        </div>
+                        <h3>Vara de Pesca ML</h3>
+                    </div>
+                    <div class="carrinho-item-direita">
+                        <p>1 x R$239,99 = R$239,99</p>
+                        <button id="carrinho-remover-vara-ml" class="carrinho-item-botao-remover">Remover</button>
+                    </div>
+                </div>
+                <div class="carrinho-item">
+                    <div class="carrinho-item-esquerda">
+                        <p>1</p>
+                        <div class="carrinho-item-botoes">
+                            <button id="carrinho-incrementar-molinete-l">+</button>
+                            <button id="carrinho-decrementar-molinete-l">-</button>
+                        </div>
+                        <h3>Molinete L</h3>
+                    </div>
+                    <div class="carrinho-item-direita">
+                        <p>1 x R$129,99 = R$129,99</p>
+                        <button id="carrinho-remover-molinete-l" class="carrinho-item-botao-remover">Remover</button>
+                    </div>
+                </div>
+                <div class="carrinho-item">
+                    <div class="carrinho-item-esquerda">
+                        <p>3</p>
+                        <div class="carrinho-item-botoes">
+                            <button id="carrinho-incrementar-kit-isca-superficie">+</button>
+                            <button id="carrinho-decrementar-kit-isca-superficie">-</button>
+                        </div>
+                        <h3>Kit Iscas de Superfície</h3>
+                    </div>
+                    <div class="carrinho-item-direita">
+                        <p>3 x R$59,99 = R$179,97</p>
+                        <button id="carrinho-remover-kit-isca-superficie" class="carrinho-item-botao-remover">Remover</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <section id="info-loja">
+            <div id="info-loja-elements">
+                <h2>Informações da Empresa</h2>
+                <ul>
+                    <li>Endereço: Moonriver Street, 8 / Lakeside Neighbourhood / Lussi City / Dyn State</li>
+                    <li>Telefone: +1.22474 44 8233-3149</li>
+                    <li>E-mail: contact@ennafishingwares.com</li>
+                    <li>Horário: UTC+0</li>
+                </ul>
+            </div>
+        </section>
+        <section id="form-contato-loja">
+            <form id="form-contato">
+                <div id="form-contato-elements">
+                    <h2>Formulário de Contato</h2>
+                    <label for="input-contato-nome">Nome</label>
+                    <input id="input-contato-nome" required type="label" name="formContatoNome">
+                    <label for="input-contato-email">E-mail</label>
+                    <input id="input-contato-email" required type="email" name="formContatoEmail">
+                    <label for="input-contato-mensagem">Mensagem</label>
+                    <textarea required id="input-contato-mensagem"></textarea>
+                    <button id="form-contato-mandar-mensagem">Mandar mensagem</button>
+                </div>
+            </form>
+        </section>
+    </footer>
 </body>
 </html>

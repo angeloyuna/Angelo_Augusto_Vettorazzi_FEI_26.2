@@ -59,6 +59,20 @@ td {
     background-color: #06182a;
     text-align: center;
 }
+input[type="checkbox"] {
+    height: 25PX;
+    width: 25px;
+    appearance: none;
+}
+input[type="checkbox"]:hover {
+    background-color: #1b3c5a;
+}
+input[type="checkbox"]:active {
+    background-color: #688daf;
+}
+input[type="checkbox"]:checked {
+    background-color: #b0d7fc;
+}
 
 /*--- Destaque ---*/
 
