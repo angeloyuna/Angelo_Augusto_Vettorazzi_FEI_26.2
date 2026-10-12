@@ -26,6 +26,7 @@ button {
     height: 40px;
     color: #06182a;
     background-color: #b0d7fc;
+    cursor: pointer;
 }
 button:hover {
     background-color: #89b5de;
@@ -73,6 +74,20 @@ input[type="checkbox"]:active {
 input[type="checkbox"]:checked {
     background-color: #b0d7fc;
 }
+input[type="radio"] {
+    height: 25px;
+    width: 25px;
+    appearance: none;
+}
+input[type="radio"]:hover {
+    background-color: #1b3c5a;
+}
+input[type="radio"]:active {
+    background-color: #688daf;
+}
+input[type="radio"]:checked {
+    background-color: #b0d7fc;
+}
 
 /*--- Destaque ---*/
 
@@ -97,9 +112,28 @@ header {
     justify-content: right;
     background-color: #1b3c5a;
 } 
+#header-user p {
+    font-size: 1.5em;
+    margin: 35px;
+
+}
+#header-user button {
+    background-color: transparent;
+    border-color: transparent;
+    width: fit-content;
+    height: fit-content;
+    padding: 3px;
+    margin: 17px;
+}
+#header-user button:hover {
+    background-color: #09233e;
+}
+#header-user button:active {
+    border: 2px solid #b0d7fc;
+    padding: 4px;
+}
 #header-user img {
     height: 50px;
-    margin: 20px;
 }
 #header-user a {
     border: 2px solid transparent;

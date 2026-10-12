@@ -3,9 +3,198 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Relatórios - Enna's Fishing Wares</title>
+    <title>Relatórios Administrador - Enna's Fishing Wares</title>
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/relatorios.css">
 </head>
 <body>
-    
+    <header>
+        <section id="header-logo">
+            <img src="../img/header/logo.png" alt="Logo de Enna's Fishing Wares">
+            <h1>Enna's Fishing Wares</h1>
+        </section>
+        <section id="header-user">
+            <p id="header-user-p-admin">Usuário Administrador</p>
+            <p>Usuário: Enna Malryn</p>
+            <a href="cadastro.html" hidden>Cadastro</a>
+            <a href="login.html" hidden>Login</a>
+            <a href="perfil.html">Perfil</a>
+            <button id="header-user-abrir-menu"><img src="../img/header/menu.png" alt="Ícone de Menu"></button>
+        </section>
+    </header>
+    <nav>
+        <a href="index.html" id="nav-active">Home</a>
+        <a href="loja.html">Loja</a>
+        <a href="relatorios.html" class="nav-admin">Relatórios Adminstrador</a>
+    </nav>
+    <main id="relatorios">
+        <h2>Página de Relatórios do Administrador</h2>
+        <aside id="relatorio-clientes">
+            <table>
+                <caption>Relatório de Clientes</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">ID</th>
+                        <th scope="col">Nome</th>
+                        <th scope="col"> E-mail</th>
+                        <th scope="col">CPF</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>C001</td>
+                        <td>Yuna</td>
+                        <td>yuna@example.com</td>
+                        <td>000000000-00</td>
+                    </tr>
+                    <tr>
+                        <td>C002</td>
+                        <td>Dinn</td>
+                        <td>dinn@example.com</td>
+                        <td>111111111-11</td>
+                    </tr>
+                    <tr>
+                        <td>C003</td>
+                        <td>Lussi</td>
+                        <td>lussi@example.com</td>
+                        <td>222222222-22</td>
+                    </tr>
+                    <tr>
+                        <td>C004</td>
+                        <td>Runi</td>
+                        <td>runi@example.com</td>
+                        <td>333333333-33</td>
+                    </tr>
+                    <tr>
+                        <td>C005</td>
+                        <td>Mumu</td>
+                        <td>mumu@example.com</td>
+                        <td>444444444-44</td>
+                    </tr>
+                </tbody>
+            </table>
+        </aside>
+        <aside id="busca-clientes">
+            <h2>Busca de Clientes</h2>
+            <form id="form-busca-clientes" class="form-busca-clientes-elements">
+                <div id="busca-clientes-modo">
+                    <p>Pesquisar por:</p>
+                    <label for="busca-clientes-modo-id">ID</label>
+                    <input id="busca-clientes-modo-id" checked name="buscaClientesModoID" type="radio">
+                    <label for="busca-clientes-modo-nome">Nome</label>
+                    <input id="busca-clientes-modo-nome" name="buscaClientesModoNome" type="radio">
+                    <label for="busca-clientes-modo-email">E-mail</label>
+                    <input id="busca-clientes-modo-email" name="buscaClientesModoEmail" type="radio">
+                    <label for="busca-clientes-modo-cpf">CPF</label>
+                    <input id="busca-clientes-modo-cpf" name="buscaClientesModoCPF" type="radio">
+                </div>
+                <input id="busca-clientes-barra-pesquisa" name="buscaClientesBarraPesquisa" type="label">
+                <button id="busca-clientes-botao">Pesquisar</button>
+            </form>
+        </aside>
+        <aside id="relatorio-compras">
+            <table>
+                <caption>Relatório de Compras</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">ID</th>
+                        <th scope="col">Cliente</th>
+                        <th scope="col">Produtos</th>
+                        <th scope="col">Quantidade</th>
+                        <th scope="col">Total</th>
+                        <th scope="col">Data</th>
+                    </tr>
+                    <tr>
+                        <td>CP001</td>
+                        <td>Yuna</td>
+                        <td>Vara de Pesca ML<br>Molinete L<br>Kit Iscas de Superfície</td>
+                        <td>1x<br>1x<br>3x</td>
+                        <td>R$549,95</td>
+                        <td>14/07/3817</td>
+                    </tr>
+                    <tr>
+                        <td>CP002</td>
+                        <td>Dinn</td>
+                        <td>Vara de Pesca UL</td>
+                        <td>1x</td>
+                        <td>R$89,99</td>
+                        <td>21/07/3817</td>
+                    </tr>
+                    <tr>
+                        <td>CP003</td>
+                        <td>Lussi</td>
+                        <td>Carretilha Perfil Baixo<br>Kit Iscas de Meia-Água</td>
+                        <td>1x<br>2x</td>
+                        <td>R$499,97</td>
+                        <td>23/07/3817</td>
+                    </tr>
+                    <tr>
+                        <td>CP004</td>
+                        <td>Runi</td>
+                        <td>Kit Iscas de Fundo</td>
+                        <td>1x</td>
+                        <td>R$99,99</td>
+                        <td>28/07/3817</td>
+                    </tr>
+                    <tr>
+                        <td>CP005</td>
+                        <td>Mumu</td>
+                        <td>Vara de Pesca L</td>
+                        <td>1x</td>
+                        <td>R$139,99</td>
+                        <td>09/07/3817</td>
+                    </tr>
+                </thead>
+            </table>
+        </aside>
+        <aside id="busca-compras">
+            <h2>Busca de Compras</h2>
+            <form id="form-busca-compras" class="form-busca-compras-elements">
+                <div id="busca-compras-modo">
+                    <p>Pesquisar por:</p>
+                    <label for="busca-compras-modo-id">ID</label>
+                    <input id="busca-compras-modo-id" checked name="buscaComprasModoID" type="radio">
+                    <label for="busca-compras-modo-cliente">Cliente</label>
+                    <input id="busca-compras-modo-cliente" name="buscaComprasModoCliente" type="radio">
+                    <label for="busca-compras-modo-data">Data</label>
+                    <input id="busca-compras-modo-data" name="buscaComprasModoData" type="radio">
+                    <label for="busca-compras-modo-valor">Valor</label>
+                    <input id="busca-compras-modo-valor" name="buscaComprasModoValor" type="radio">
+                    <label for="busca-compras-modo-produto">Produto</label>
+                    <input id="busca-compras-modo-produto" name="buscaComprasModoProduto" type="radio">
+                </div>
+                <input id="busca-compras-barra-pesquisa" name="buscaComprasBarraPesquisa" type="label">
+                <button id="busca-compras-botao">Pesquisar</button>
+            </form>
+        </aside>
+    </main>
+    <footer>
+        <section id="info-loja">
+            <div id="info-loja-elements">
+                <h2>Informações da Empresa</h2>
+                <ul>
+                    <li>Endereço: Moonriver Street, 8 / Lakeside Neighbourhood / Lussi City / Dyn State</li>
+                    <li>Telefone: +1.22474 44 8233-3149</li>
+                    <li>E-mail: contact@ennafishingwares.com</li>
+                    <li>Horário: UTC+0</li>
+                </ul>
+                <button>Editar Informações</button>
+            </div>
+        </section>
+        <section id="form-contato-loja">
+            <form id="form-contato">
+                <div id="form-contato-elements">
+                    <h2>Formulário de Contato</h2>
+                    <label for="input-contato-nome">Nome</label>
+                    <input id="input-contato-nome" required type="label" name="formContatoNome">
+                    <label for="input-contato-email">E-mail</label>
+                    <input id="input-contato-email" required type="email" name="formContatoEmail">
+                    <label for="input-contato-mensagem">Mensagem</label>
+                    <textarea required id="input-contato-mensagem"></textarea>
+                    <button id="form-contato-mandar-mensagem">Mandar mensagem</button>
+                </div>
+            </form>
+        </section>
+    </footer>
 </body>
 </html>

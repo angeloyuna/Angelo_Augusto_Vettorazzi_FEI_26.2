@@ -2,3 +2,174 @@
     Documento responsável pela estilização CSS de classes e ids de elementos/seções
     que são únicos para a página relatorios.html
 */
+
+/*--- Destaque ---*/
+
+#header-user-p-admin {
+    color: #ffbb00;
+}
+.nav-admin {
+    color: #ffbb00;
+    border-color: transparent transparent #7b5c06 transparent;
+}
+.nav-admin:hover {
+    color: #ffd152;
+    border-color: transparent transparent #ffbb00 transparent;
+
+}
+
+/*--- Relatórios e Buscas ---*/
+
+#relatorios {
+    display: grid;
+    grid-template-columns: 55% 45%;
+    margin: 15px;
+}
+#relatorios h2 {
+    grid-column: span 2;
+}
+
+/* relatorio-clientes */
+
+#relatorio-clientes {
+    margin: 20px;
+}
+#relatorio-clientes table {
+    width: 100%;
+}
+
+/* busca-clientes */
+
+#busca-clientes {
+    border: 2px solid #b0d7fc;
+    background-color: #09233e;
+    height: fit-content;
+    align-self: center;
+    margin: 20px;
+}
+#busca-clientes h2 {
+    font-size: 2.5em;
+    margin: 20px;
+    text-align: center;
+}
+#busca-clientes {
+    border: 2px solid #b0d7fc;
+    background-color: #09233e;
+    height: fit-content;
+    align-self: center;
+    margin: 20px;
+}
+#busca-clientes h2 {
+    font-size: 2.5em;
+    margin: 20px;
+    text-align: center;
+}
+.form-busca-clientes-elements input, .form-busca-clientes-elements button, .form-busca-clientes-elements label {
+    font-size: 1.75em;
+    margin: 25px;
+}
+.form-busca-clientes-elements label {
+    margin: 12px 5px 12px 12px;
+}
+.form-busca-clientes-elements input[type="label"] {
+    width: 95%;
+}
+.form-busca-clientes-elements button {
+    margin-top: 0px;
+    height: 60px;
+    width: 95%;
+}
+#busca-clientes-modo {
+    display: inline-flex;
+}
+#busca-clientes-modo p {
+    font-size: 1.2em;
+    margin: 16px 35px 12px 35px;
+    color: #b0d7fc;
+}
+#busca-clientes-modo input[type="radio"] {
+    margin: 15px;    
+}
+
+/* relatorio-compras */
+
+#relatorio-compras {
+    margin: 20px;
+}
+#relatorio-compras table {
+    width: 100%;
+}
+
+/* busca-compras */
+
+#busca-compras {
+    border: 2px solid #b0d7fc;
+    background-color: #09233e;
+    height: fit-content;
+    align-self: center;
+    margin: 20px;
+}
+#busca-compras h2 {
+    font-size: 2.5em;
+    margin: 20px;
+    text-align: center;
+}
+.form-busca-compras-elements input, .form-busca-compras-elements button, .form-busca-compras-elements label {
+    font-size: 1.75em;
+    margin: 25px;
+}
+.form-busca-compras-elements label {
+    margin: 12px 0px 12px 7px;
+}
+.form-busca-compras-elements input[type="label"] {
+    width: 95%;
+}
+.form-busca-compras-elements button {
+    margin-top: 0px;
+    height: 60px;
+    width: 95%;
+}
+#busca-compras-modo {
+    display: inline-flex;
+}
+#busca-compras-modo p {
+    font-size: 1.2em;
+    margin: 16px 20px 12px 35px;
+    color: #b0d7fc;
+}
+#busca-compras-modo input[type="radio"] {
+    margin: 15px;    
+}
+
+/*--- Rodapé ---*/
+
+#info-loja-elements button {
+    margin: 0px 20px 40px 60px;
+    width: 20%;
+}
+
+/*--- Funcionalidade de Impressão ---*/
+
+@media print {
+    * {
+        color: black;
+    }
+    header {
+        display: none;
+    }
+    nav {
+        display: none;
+    }
+    footer {
+        display: none;
+    }
+    th, td {
+        border-color: black;
+    }
+    #busca-clientes, #busca-compras {
+        display: none;
+    }
+    #relatorio-clientes, #relatorio-compras {
+        grid-column: span 2;
+    }
+}
