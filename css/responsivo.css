@@ -2,3 +2,642 @@
     Documento responsável pela responsividade CSS de elementos gerais, classes
     e ids de elementos/seções para a adaptação das páginas para diferentes resoluções 
 */
+
+/*
+    ==========================
+    Desktop 1600px Comprimento
+    ==========================
+*/
+
+@media screen and (max-width: 1600px) {
+    h2 {
+        font-size: 1.5em;
+    }
+    h3, h4, li {
+        font-size: 1.3em;
+    }
+    caption {
+        font-size: 2.5em;
+        margin: 10px;
+    }
+    th, td {
+        padding: 10px;
+    }
+
+    /*--- Descrição da Loja (index.html) ---*/
+
+    #descricao-loja {
+        display: grid;
+        grid-template-columns: 40% 62%;
+        margin: 40px;
+    }
+    .descricao-texto p {
+        font-size: 1.3em;
+    }
+
+
+    /*--- Cadastro e Login (cadastro.html e login.html ---*/ 
+
+    .form-cadastro-login-elements input {
+        width: 93%;
+    }
+    .form-cadastro-login-elements button {
+        width: 95%;
+    }
+
+
+    /*--- Perfil (perfil.html) ---*/
+
+    .form-editar-dados-perfil-elements input, .form-editar-dados-perfil-elements button, .form-editar-dados-perfil-elements label {
+        font-size: 1.5em;
+        margin: 25px;
+    }
+    .form-editar-dados-perfil-elements input {
+       width: 93%;
+    }
+
+    /*--- Catálogo (loja.html) ---*/
+
+    #loja-catalogo {
+        grid-template-columns: 24% 68%;
+    }
+    #form-catalogo label {
+        font-size: 1.3em;
+    }
+    #barra-pesquisa-catalogo {
+        width: 83%;
+    }
+
+    /*--- Carrinho (loja.html) ---*/
+
+    #loja-carrinho {
+        grid-template-columns: 27% 73%;
+    }
+    #form-carrinho label {
+        font-size: 1.3em;
+    }
+    #form-carrinho button {
+        width: 86%;
+    }
+
+    /*--- Busca Clientes (relatorios.html) ---*/
+
+    #busca-clientes h2 {
+        font-size: 2.2em;
+        margin: 20px;
+    }
+    .form-busca-clientes-elements input, .form-busca-clientes-elements button, .form-busca-clientes-elements label {
+        font-size: 1.55em;
+    }
+    .form-busca-clientes-elements label {
+        margin: 12px 5px 12px 12px;
+    }
+    .form-busca-clientes-elements input[type="label"] {
+        width: 93%;
+    }
+    .form-busca-clientes-elements button {
+        height: 50px;
+        width: 94%;
+    }
+    #busca-clientes-modo p {
+        font-size: 1em;
+        margin: 16px 0px 12px 35px;
+    }
+
+    /*--- Busca Compras (relatorios.html) ---*/
+
+    #busca-compras h2 {
+        font-size: 2.2em;
+    }
+    .form-busca-compras-elements input, .form-busca-compras-elements button, .form-busca-compras-elements label {
+        font-size: 1.55em;
+    }
+    .form-busca-compras-elements label {
+        margin: 12px 5px 12px 12px;
+    }
+    .form-busca-compras-elements input[type="label"] {
+        width: 93%;
+    }
+    .form-busca-compras-elements button {
+        height: 50px;
+        width: 94%;
+    }
+    #busca-compras-modo p {
+        font-size: 1em;
+        margin: 16px 0px 12px 35px;
+    }
+    #busca-compras-modo input[type="radio"] {
+        margin: 15px 2px 15px 2px;    
+    }
+}
+
+/*
+    ==========================
+    Desktop 1280px Comprimento
+    ==========================
+*/
+
+@media screen and (max-width: 1280px) {
+
+    h3, h4, li {
+        font-size: 1.1em;
+    }
+    caption {
+        font-size: 2.2em;
+        margin: 10px;
+    }
+    #header-user p {
+        font-size: 1em;
+    }
+
+    /*--- Produtos disponíveis (index.html) ---*/
+
+    .info-produto {
+        width: 260px;
+        margin: 15px;
+    }
+
+    /*--- Descrição da Loja (index.html) ---*/
+
+    #descricao-loja {
+        display: grid;
+        grid-template-columns: 40% 60%;
+        margin: 20px;
+    }
+    .descricao-texto p {
+        font-size: 1.1em;
+    }
+    .descricao-galeria img { 
+        width: 46%;
+        margin: 10px;
+    }
+
+    /*--- Cadastro e Login (cadastro.html e login.html ---*/ 
+
+    .form-cadastro-login-elements input {
+        width: 92%;
+    }
+    .form-cadastro-login-elements button {
+        width: 93%;
+    }
+
+    /*--- Perfil (perfil.html) ---*/
+
+    .form-editar-dados-perfil-elements input, .form-editar-dados-perfil-elements button, .form-editar-dados-perfil-elements label {
+        font-size: 1.1em;
+        margin: 20px;
+    }
+    .form-editar-dados-perfil-elements input {
+       width: 91%;
+    }
+    .form-editar-dados-perfil-elements button {
+        width: 93%;
+    }
+
+    /*--- Catálogo (loja.html) ---*/
+
+    #loja-catalogo {
+        grid-template-columns: 24% 76%;
+    }
+    #form-catalogo label {
+        font-size: 1.1em;
+    }
+    .catalogo-tipo-filtro {
+        margin: 20px;
+    }
+    #form-catalogo div label, #form-catalogo div input {
+        display: inline-flex;
+        margin: 20px 0px 0px 20px;
+    }
+    .caixa-produto-catalogo {
+        margin: 0px;
+    }
+    .info-produto-catalogo {
+        width: 270px;
+        height: 460px;
+        text-align: center;
+    }
+
+    /*--- Carrinho (loja.html) ---*/
+
+    #loja-carrinho {
+        grid-template-columns: 30% 70%;
+    }
+    #form-carrinho label {
+        font-size: 1.1em;
+    }
+    #form-carrinho input {
+        font-size: 1.3em;
+        width: 80%;
+    }
+    .carrinho-item {
+        grid-template-columns: 40% 60%;
+    }
+
+    /*--- Busca Clientes (relatorios.html) ---*/
+
+    #busca-clientes h2 {
+        font-size: 1.8em;
+        margin: 20px;
+    }
+    .form-busca-clientes-elements input, .form-busca-clientes-elements button, .form-busca-clientes-elements label {
+        font-size: 1.15em;
+    }
+    .form-busca-clientes-elements label {
+        margin: 14px 5px 14px 18px;
+    }
+    #busca-clientes-modo p {
+        font-size: 0.8em;
+        margin: 16px 0px 12px 30px;
+    }
+    #busca-clientes-modo input[type="radio"] {
+        margin: 15px 0px 15px 0px;    
+    }
+
+    /*--- Busca Compras (relatorios.html) ---*/
+
+    #busca-compras h2 {
+        font-size: 1.8em;
+        margin: 20px;
+    }
+    .form-busca-compras-elements input, .form-busca-compras-elements button, .form-busca-compras-elements label {
+        font-size: 1.15em;
+    }
+    .form-busca-compras-elements label {
+        margin: 14px 5px 14px 8px;
+    }
+    #busca-compras-modo p {
+        font-size: 0.8em;
+        margin: 16px 0px 12px 30px;
+    }
+    #busca-compras-modo input[type="radio"] {
+        margin: 15px 0px 15px 0px;    
+    }
+}
+
+/*
+    ========================
+    Tablet 840px Comprimento
+    ========================
+*/
+
+@media screen and (max-width: 840px) {
+
+    h3, h4, li {
+        font-size: 1.2em;
+    }
+    caption {
+        font-size: 2.0em;
+        margin: 10px;
+    }
+    #header-user p {
+        font-size: 1em;
+        margin: 30px 10px 30px 10px;
+    }
+
+    /*--- Produtos disponíveis (index.html) ---*/
+
+    .info-produto {
+        width: 330px;
+        margin: 15px;
+    }
+
+    /*--- Descrição da Loja (index.html) ---*/
+
+    #descricao-loja {
+        display: block;
+        margin: 30px;
+    }
+    .descricao-texto p {
+        font-size: 0.9em;
+    }
+    .descricao-galeria img { 
+        width: 46%;
+        margin: 12px;
+    }
+
+    /*--- Cadastro e Login (cadastro.html e login.html ---*/ 
+
+    #caixa-cadastro-login {
+        width: fit-content;
+        margin: 34px;
+    }
+
+    /*--- Perfil (perfil.html) ---*/
+
+    #usuario-perfil {
+        display: block;
+        margin: 30px;
+    }
+    #perfil-meus-pedidos table {
+        margin: 80px 0px 80px 0px;   
+    }
+    #perfil-editar-dados {
+        margin: 80px 0px 80px 0px;
+    }
+
+    /*--- Catálogo (loja.html) ---*/
+
+    #loja-catalogo {
+        display: block;
+    }
+    #form-catalogo {
+        margin: 30px;
+    }
+    .info-produto-catalogo {
+        margin: 20px;
+        width: 310px;
+        height: 500px;
+        text-align: center;
+    }
+
+    /*--- Carrinho (loja.html) ---*/
+
+    #loja-carrinho {
+        display: block;
+    }
+    #form-carrinho {
+        margin: 30px;
+    }
+    #form-carrinho label {
+        font-size: 0.9em;
+    }
+    #form-carrinho input {
+        font-size: 1.1em;
+        width: 90%;
+    }
+    #form-carrinho button {
+        width: 93%;
+    }
+    #carrinho-itens {
+        margin: 60px 60px 60px 20px;
+    }
+    .carrinho-item {
+        grid-template-columns: 40% 60%;
+        margin-bottom: 40px;
+    }
+    .carrinho-item p {
+        font-size: 1.1em;
+    }
+
+    /*--- Relatórios (relatorios.html) ---*/
+
+    #relatorios {
+        display: block;
+        margin: 30px
+    }
+
+    /*--- Relatório Clientes (relatorios.html) ---*/
+
+    #relatorio-clientes {
+        margin-bottom: 40px;
+    }
+
+    /*--- Relatório Compras (relatorios.html) ---*/
+
+    #relatorio-compras {
+        margin-bottom: 40px;
+    }
+
+    /*--- Busca Clientes (relatorios.html) ---*/
+
+    #busca-clientes {
+        margin-bottom: 60px;
+    }
+
+}
+
+    /*--- Rodapé (relatorios.html) ---*/
+
+    #info-loja-elements button {
+        width: 70%;
+    }
+
+/*
+    ============================
+    Smartphone 320px Comprimento
+    ============================
+*/
+
+@media screen and (max-width: 320px) {
+
+    /*--- Destaque ---*/
+
+    h1 {
+        display: none;
+    }
+    #header-user a {
+        display: none;
+    }
+    #header-user p {
+        display: none;
+    }
+
+    /*--- nav ---*/
+
+    nav {
+        display: none;
+    }
+
+    /*--- Rodapé ---*/
+
+    footer {
+        display: block;
+        background-color: #1b3c5a;
+        margin: 0px -8px -40px -8px;
+    }
+    #info-loja {
+        margin: 20px;
+    }
+    #info-loja h2, #info-loja li {
+        margin: 30px;
+    }
+    #info-loja li {
+        margin-left: 0px;
+        overflow: scroll;
+    }
+
+    /*--- Produtos disponíveis (index.html) ---*/
+
+    #produtos-disponiveis {
+        margin: 10px;
+    }
+    .info-produto {
+        width: 250px;
+        margin: 10px;
+    }
+    .preco-botao-produto h4 {
+        display: block;
+        margin: 0px;
+    }
+
+    /*--- Descrição da Loja (index.html) ---*/
+
+    .descricao-galeria img { 
+        width: 100%;
+        margin: 20px 0px 20px 0px;
+    }
+
+    /*--- Cadastro e Login (cadastro.html e login.html ---*/ 
+
+    #caixa-cadastro-login {
+        width: 100%;
+        margin: 0px;
+    }
+    .form-cadastro-login-elements label {
+        font-size: 1.2em;
+    }
+    .form-cadastro-login-elements input {
+        font-size: 1.2em;
+        width: 80%;
+    }
+    .form-cadastro-login-elements button {
+        width: 80%;
+    }
+    .form-cadastro-login-elements p {
+        font-size: 0.7em;
+    }
+    .form-cadastro-login-elements a {
+        margin: 0px 0px 0px 30px;
+        font-size: 0.7em;
+    }
+
+    /*--- Perfil (perfil.html) ---*/
+
+    #perfil-meus-pedidos {
+        overflow: scroll;
+    }
+    #perfil-meus-pedidos table {
+        margin: 0px 0px 0px 0px;   
+    }
+    .form-editar-dados-perfil-elements p {
+       font-size: 0.8em;
+    }
+    .form-editar-dados-perfil-elements input {
+       width: 80%;
+    }
+    .form-editar-dados-perfil-elements button {
+        width: 80%;
+    }
+
+    /*--- Catálogo (loja.html) ---*/
+
+    #form-catalogo input {
+        font-size: 1.2em;
+    }
+    #form-catalogo label {
+        font-size: 0.9em;
+    }
+    #form-catalogo {
+        margin: 0px;
+    }
+    .info-produto-catalogo {
+        margin: 10px;
+        width: 250px;
+        height: 500px;
+        text-align: center;
+    }
+
+    /*--- Carrinho (loja.html) ---*/
+
+    #form-carrinho {
+        margin: 0px;
+    }
+    #form-carrinho input {
+        font-size: 1.1em;
+        width: 70%;
+    }
+    #form-carrinho button {
+        width: 70%;
+    }
+    #carrinho-itens {
+        margin: 60px 20px 60px -20px;
+    }
+    .carrinho-item {
+        display: block;
+        margin-bottom: 40px;
+    }
+    .carrinho-item-esquerda {
+        display: inline-flex;
+    }
+    .carrinho-item-direita {
+        display: block;
+    }
+    .carrinho-item-botao-remover {
+        width: 250px;
+    }
+
+    /*--- Relatório Clientes (relatorios.html) ---*/
+
+    #relatorio-clientes {
+        margin-bottom: 40px;
+        overflow: scroll;
+    }
+
+    /*--- Relatório Compras (relatorios.html) ---*/
+
+    #relatorio-compras {
+        margin-bottom: 40px;
+        overflow: scroll;
+    }
+
+    /*--- Busca Clientes (relatorios.html) ---*/
+
+    #busca-clientes h2 {
+        font-size: 1.3em;
+        margin: 20px;
+    }
+    .form-busca-clientes-elements label {
+        margin: 0px 5px 0px 18px;
+    }
+    .form-busca-clientes-elements input[type="label"] {
+        width: 76%;
+    }
+    .form-busca-clientes-elements button {
+        height: 50px;
+        width: 80%;
+    }
+    #busca-clientes-modo {
+        display: block;
+    }
+    #busca-clientes-modo p {
+        font-size: 1.1em;
+        margin: 16px 0px 12px 50px;
+    }
+    #busca-clientes-modo input[type="radio"] {
+        margin: 15px 0px 0px 0px;    
+    }
+
+    /*--- Busca Compras (relatorios.html) ---*/
+
+    #busca-compras h2 {
+        font-size: 1.2em;
+        margin: 20px;
+    }
+    .form-busca-compras-elements label {
+        margin: 0px 5px 0px 18px;
+    }
+    .form-busca-compras-elements input[type="label"] {
+        width: 76%;
+    }
+    .form-busca-compras-elements button {
+        height: 50px;
+        width: 80%;
+    }
+    #busca-compras-modo {
+        display: block;
+    }
+    #busca-compras-modo p {
+        font-size: 1.1em;
+        margin: 16px 0px 12px 50px;
+    }
+    #busca-compras-modo input[type="radio"] {
+        margin: 15px 0px 0px 0px;    
+    }
+}
+
+    /*--- Rodapé ---*/
+
+    #info-loja-elements button {
+        width: 50%;
+    }

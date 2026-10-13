@@ -27,6 +27,8 @@ button {
     color: #06182a;
     background-color: #b0d7fc;
     cursor: pointer;
+    transition-property: background-color;
+    transition-duration: 0.1s;
 }
 button:hover {
     background-color: #89b5de;
@@ -143,6 +145,8 @@ header {
     font-size: 1.4em;
     margin: 1em;
     padding: 10px;
+    transition-property: background-color;
+    transition-duration: 0.1s;
 }
 #header-user a:hover {
     background-color: #09233e;

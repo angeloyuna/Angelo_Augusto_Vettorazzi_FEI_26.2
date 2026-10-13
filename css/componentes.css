@@ -114,7 +114,7 @@
     width: 95%;
 }
 .form-cadastro-login-elements button {
-    margin-top: 20;
+    margin-top: 20px;
     height: 60px;
     width: 96%;
 }
@@ -138,7 +138,8 @@
 }
 #perfil-meus-pedidos table {
     width: 100%;
-    height: 90%;
+    height: 50%;
+    overflow: scroll;
 }
 #perfil-editar-dados {
     border: 2px solid #b0d7fc;
@@ -173,18 +174,18 @@
     width: 95%;
 }
 .form-editar-dados-perfil-elements button {
-    margin-top: 20;
+    margin-top: 20px;
     height: 60px;
     width: 95%;
 }
 
 /*
-    ===========================================
-    loja.html (Catálogo, Carrinho, Confirmação)
-    ===========================================
+    ==============================
+    loja.html (Catálogo, Carrinho)
+    ==============================
 */
 
-/*--- Loja ---*/
+/*--- Catálogo ---*/
 
 #loja-catalogo {
     display: grid;
